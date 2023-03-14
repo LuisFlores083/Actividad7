@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <header>
+		<h1>¡Javascript!</h1>
+
+        <div id="tema">
+            <div class="capas" id="capa1" title="dark" onclick="dark()"></div>
+            <div class="capas" id="capa2" title="light"></div>
+            <div class="capas" id="capa3" title="life"></div>
+        </div>
+	</header>
+    <section id="resultados">
+        <select id="tamanio" onchange="dimension()">
+            <option value="texto">Tamaño de fuente</option>
+            <option value="chico">Chico</option>
+            <option value="mediano">Mediano</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <div id="mover">
+           <label >X:</label>
+           <button>+</button>
+           <button>-</button>
+        </div>
+        <p id="texto" class="texto" style="left:50px; top:50px">
+            No dejes que el miedo te impida ser feliz.
+        </p>
+
+        <figure id="terminator" onmouseover="verMensaje()" onmouseout="ocultarMensaje()">
+            <img src="image/terminator.png" id="foto" alt="">
+            <figcaption class="mensaje" id="mensaje">Hasta la vista baby</figcaption>
+           <!--<input type="text" class="entrada" placeholder="Nuevo Mensaje">--> 
+        </figure>
+
+        <article id="personajes">
+            <img class="personaje" onclick="cambiarPersonaje('terminator', 'Hasta la vista baby')" src="image/terminator.png" alt="">
+            <img class="personaje" onclick="cambiarPersonaje('mario', '!Mama mia!')" src="image/mario.png" alt="">
+            <img class="personaje" onclick="cambiarPersonaje('donatello', 'El de las tortugas ninja')" src="image/donatello.png" alt="">
+        </article>
+    </section>
+
+    <footer>D A N D </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

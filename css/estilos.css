@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    background-color: #424ddf;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0px;
+    position: relative;
+}	
+
+section{
+	height:500px;
+	background-color: #62c9ef;
+	font-size:20px;
+    position: relative;
+}
+
+footer{
+    background-color: #204956;
+}	
+
+
+/*------------------------------------------------------------------------------*/
+#tema{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 30px;
+    width: 120px;
+    background-color: lightblue;
+}
+
+.capas{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin: 4px 8px 0 0;
+}
+
+#capa1{
+    background-color: #204956;
+}
+#capa2{
+    background-color: #ffffff;
+}
+#capa3{
+    background-color: lightsteelblue;
+}
+
+.ligero{
+    background-color: aliceblue;
+    color: #204956;    
+}
+
+
+
+/*/////TAMAÑO DE FUENTE////////*/
+
+.texto {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #204956;
+    text-shadow: 2px 2px white;
+    font-family: CenturyGothic, century;
+}
+
+
+
+.chico{
+    font-size: 1rem;
+}
+
+.mediano{
+    font-size: 2rem;
+}
+
+.grande{
+    font-size: 3rem;
+}
+
+/*////////////////////////////////*/
+
+figure{
+    position: relative;
+    top: 120px;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 360px;
+
+}
+
+.mensaje{
+    position: absolute;
+    top: 50px;
+    right: -30%;
+    width: 60%;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 100px;
+    display: none;
+}
+
+.mostrarMensaje{
+    display: block;
+}
+
+.personaje{
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+}
+
+#personajes{
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    width: 60px;
+    background-color: #204956;
+    text-align: center;
+}
+
+#mover{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+button{
+    width: 50px;
+    height: 30px;
+    display: inline-block;  
+    font-size: 25px;
+    cursor: pointer; 
+}
+
